@@ -1,0 +1,25 @@
+{
+  "name": "serialport",
+  "version": "1.0.0",
+  "description": "This is a test of finding the port and connecting automatically and when it downs it will restart itself.",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start serialPort.js --name SerialportStatus",
+    "stop": "pm2 stop serialPort.js",
+    "restart": "pm2 restart serialPort.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kittikhun1910/serialport-auto-connect-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kittikhun1910/serialport-auto-connect-nodejs/issues"
+  },
+  "homepage": "https://github.com/kittikhun1910/serialport-auto-connect-nodejs#readme",
+  "dependencies": {
+    "pm2": "^5.3.0",
+    "serialport": "^11.0.0"
+  }
+}
